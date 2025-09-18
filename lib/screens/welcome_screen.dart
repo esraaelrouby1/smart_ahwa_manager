@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:smart_ahwa_manager/screens/dashboard_screen.dart';
 import 'package:smart_ahwa_manager/screens/add_order_screen.dart';
+import 'package:smart_ahwa_manager/widgets/custom_button.dart';
 
 class WelcomeScreen extends StatelessWidget {
   const WelcomeScreen({super.key});
@@ -34,35 +35,17 @@ class WelcomeScreen extends StatelessWidget {
                 textAlign: TextAlign.center,
               ),
               const Spacer(),
-              SizedBox(
-                width: double.infinity,
-                height: 48,
-                child: ElevatedButton(
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: const Color(0xFF9D6005),
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(22),
+              CustomButton(
+                text: 'Start order',
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const DashboardScreen(),
                     ),
-                  ),
-                  onPressed: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => const DashboardScreen(),
-                      ),
-                    );
-                  },
-                  child: const Text(
-                    'Start Order',
-                    style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      color: Colors.black,
-                      fontSize: 22,
-                    ),
-                  ),
-                ),
+                  );
+                },
               ),
-
               const SizedBox(height: 52),
             ],
           ),
