@@ -1,16 +1,17 @@
-# smart_ahwa_manager
+# ☕ Smart Ahwa Manager
 
-A new Flutter project.
+Smart Ahwa Manager is a simple **Flutter application** for managing drink orders in a café.  
+It allows you to add new orders, view them on the dashboard, and mark them as **Pending** or **Completed**.
+
+---
+
+## ✨ Features
+
+- **Welcome Screen** with a call-to-action button to start managing orders.  
+- **Dashboard Screen** to display all orders with their status (Pending / Completed).  
+- **Add Order Screen** to create a new order (Customer Name, Drink Type, Special Notes).  
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+<img width="211" height="419" alt="image" src="https://github.com/user-attachments/assets/6d749d4f-4842-4792-8a86-c470c3bf9e23" />
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
